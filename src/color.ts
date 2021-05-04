@@ -75,6 +75,7 @@ export function checkColorSupport(): boolean {
     (typeof window !== 'undefined' &&
       window.console &&
       (window.console as any).firebug) ||
+    //@ts-ignore
     (window.console.exception && window.console.table) ||
     // Is firefox >= v31?
     // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages

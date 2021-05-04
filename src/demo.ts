@@ -1,5 +1,7 @@
+import './css/style.scss'
 import { debugFormatter } from './formatters'
 import { createLogger } from './logger'
+
 
 localStorage.debug = 'test*,dom*'
 const log = createLogger('test', {
